@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face { src: url('../css/fonts/Roboto/Roboto-Bold.ttf');font-family: principalRoboto;}
+@font-face { src: url('../css/fonts/Roboto/Roboto-Light.ttf');font-family: secundarioRoboto;}
+@font-face { src: url('../css/fonts/Raleway/Raleway-Light.ttf');font-family: precos;}
+
+/* -------------------------------------------------------------- */
+
+.ativo {display: flex!important;}
+
+
+/* Caixa */
+.caixaPrincipal {background: url(../imgs/Grupodemascara10.png)no-repeat;background-size: 60%;height: 100vh;background-position: right;display: flex;}
+.box {display: flex;flex-direction: column;align-items: center;justify-content: center;}
+.plano {display: flex;flex-direction: column;max-width: 50%;justify-content: center;align-items: center;flex-wrap: wrap;}
+.nomePlano {font-size: 3.5em;color: #022362;font-family: principalRoboto;text-transform: uppercase;text-align: center;}
+.plano h1 {font-size: 6rem;font-family: principalRoboto;color: #00A0E1;}
+.plano .preco {font-size: 1.5em;color: #085499;font-family: principalRoboto;}
+.plano .texto {color: gray;font-family: precos;text-align: center;margin: 1em 0;}
+
+/* Cabecalho */
+header {height: 100vh;width: 100%;display: flex!important;align-items: center;justify-content: center;}
+.logoPrincipal {width: 25%;background: url(../imgs/Caminho206.png) no-repeat;background-size: 100%;position: absolute;left: 0;top: 0;}
+.logoPrincipal img {max-width: 210px;width:100%;object-fit: contain;margin: -25px 0px 0px 30px;}
+.entrar {padding: 0.2em 1em;border-radius: 5px;text-transform: uppercase;background-color: #33cae7;color: gray;cursor: pointer;border: 1px solid white;font-family: principalRoboto;position: absolute;right: 10%;top: 5%;}
+.textoPrincipal {height: 100%;display: flex;flex-direction: column;align-items: center;width: 50%;}
+.textoPrincipal .texto {max-width: 50%;margin-top: 30%;}
+.textoPrincipal h1 {font-size: 3em;color: #085499;margin: 0;font-family: principalRoboto;text-transform: uppercase;max-width: 100%;}
+.textoPrincipal p {color: #BB941D;font-family: secundarioRoboto;margin:1em 0 3em;max-width: 80%;}
+.textoPrincipal button {padding: 0.5em 3em;border-radius: 5em;border: none;background: linear-gradient(to right,#0c77bf,#01c5df);color: white;font-family: secundarioRoboto;font-size: 1.2em;margin-top: 0em;cursor: pointer;}
+.imagemPrincipal {height: 100%;width: 50%;display: flex;align-items: center;justify-content: center;}
+.imagemPrincipal img {width: 300px;}
+.back {position: absolute;z-index: -1;margin-left: 50%;width: 50%;}
+#bolhapequena {position: absolute;top: 25px;left: 360px;width: 40px;height: 40px;}
+.textoDestaque {font-size: 2.5em;text-transform: uppercase;color: #00a2e1;font-family: principalRoboto;display: flex;align-items: center;}
+.textoPrincipal .texto h2 {margin: 0;font-size: 2.6rem;color: #085499;text-transform: uppercase;font-family: principalRoboto;}
+
+.plano-teste{background: #1565C0;}
+.plano-teste h4{color: #7AD634;}
+.plano-teste p{color: #fff;}
+
+.planos {display: flex;align-items: flex-start;justify-content: space-evenly;width: 100%;height: 850px;margin-top: 2em;}
+.titulo {color: #022362;font-family: principalRoboto;text-transform: uppercase;margin-bottom: 1em;font-size: 2.5em;}
+.planos .bloco {display: flex;align-items: center;justify-content: space-between;}
+.planos .bloco .box {width: 30%;border-radius: 10px;box-shadow: 2px 5px 5px 2px #888888;}
+.planos .bloco .box h1 {width: 100%;color: #41b8ff;display: flex;align-items: center;justify-content: center;flex-direction: column;font-family: secundarioRoboto;font-size: 2.5em;margin: 0;line-height: 55px;margin-top: 35px;margin-bottom: 70px;}
+.planos .bloco .box h1 span {font-family: principalRoboto;font-size: 14px;}
+.planos .bloco a{margin:5px}
+.planos .bloco .box p {background-color: #41b8ff;width: 100%;display: flex;align-items: center;line-height:25px;flex-direction: column;margin: 0;justify-content: center;text-align: right;color: white;font-family:precos;font-size: 2em;padding: 1em 0 0.5em 0;border-radius: 0px 0px 10px 10px;}
+.planos .bloco .box p span {font-size: 0.6em;color: #022362;width: 65%;}
+.planos .precos p {text-align: center;color: #022362;font-family: secundarioRoboto;margin-top: 1.5em;}
+.precos {width: 70%;}
+.mensagem {width: 100%!important;height: 150px;}
+
+.plano-header{background: #1565C0;}
+.plano-header h3{color: #A6EDF9;width: 148px;margin: auto;}
+.bady-detalhes-compras{display: flex;flex-direction: column;padding: 15px;}
+
+/* Vantagens */
+.camada {height: 110vh;position: relative;}
+.vantagens {position: relative;display: flex;align-items: center;width: 100%;height: 500px;justify-content: space-evenly;background-size: cover;background-position: center;}
+#background {width: 100%;object-fit: cover;position: absolute;top: 1080px;z-index: 1;object-fit: cover;}
+.bonecoVantagens {width: 60%;height: auto;z-index: 2;margin-top: 0%;margin-left: 15%; display: flex;flex-direction: column;}
+.carousel {width: 100%!important;display: flex!important;align-items: center;justify-content: center;flex-direction: column;}
+.boxCarousel {display: flex;flex-direction: column;align-items: center;justify-content: center;height: 100%!important;}
+.boxCarousel p {text-transform: uppercase;color: white;font-family: principalRoboto;font-size: 1.2em;max-width: 50%;text-align: center;margin-top: 2em;}
+.slick-prev {display: none!important;}
+.slick-next {display: none!important;}
+.carousel p{color: white;}
+.slick-dots li button:before {width: 12px!important;height: 12px!important;background-color: white!important;border-radius: 100%!important;font-size: 0px!important;}
+
+/* Whatsapp */
+.whats {display: flex;align-items: center;justify-content: space-evenly;width: 100%;height: 850px;position: relative;}
+.whats .contato {display: flex;flex-direction: column;align-items: center;justify-content: center;width: 40%;}
+.whats .contato h1 {color: #085499;text-transform: uppercase;font-weight: bolder;font-size: 3em;font-family: principalRoboto;}
+.whats .contato img {width: 180px;margin-top: 2em;}
+.whats .contato h1:nth-child(2) {color: #00a0e1;border-bottom: 8px solid #085499;}
+.whats .contato h1:nth-child(3) {color: #085499;font-size: 5.3em;}
+
+/* Formulario Whatsapp */
+.formularioPrincipal form {display: flex;flex-wrap: wrap;align-items: center;justify-content: space-between;}
+.formularioPrincipal {max-width: 1000px;margin: 0 auto;padding: 5em 0;}
+.formularioPrincipal input {padding: 1em;border-radius: 10px;border: 1px solid #00A0E1;margin: 1em 0;}
+.mensagem {height: 100px;}
+.formularioPrincipal button {background-color: #085499;width: 100%;border: none;color: white;padding: 1em 0;border-radius: 10px;}
+
+/* Rodape */
+footer {background-color: #022362;width: 100%;height: 100vh;display: flex;flex-direction: column;justify-content: center;position: relative;}
+footer .info img {width: 350px;position: relative;}
+footer .info {display: flex;align-items: center;justify-content: center;flex-direction: column;}
+footer .info p {font-family: secundarioRoboto;color: white;margin: 0.8em 0;}
+footer .info p span {font-family: principalRoboto;}
+footer .info p:nth-child(2) {max-width: 17%;text-align: center;}
+footer .adm {display: flex;justify-content: space-between;align-items: center;padding: 0em 5em;margin-top: 10em;}
+.adm p {font-family: secundarioRoboto;color: white;}
+.adm p span {font-family: principalRoboto;}
+.bolhas {position: absolute;top: 0;height: 100vh;width: 100%;}
+footer .info p span {color: white!important;}
+
+/* Comprar */
+.comprar {height: 100vh;display:flex}
+.boneco {width: 50%;height: 100%;background: url(../imgs/Grupodemascara10.png) no-repeat;background-size: 100%;}
+.esquerda {transform: rotateY(180deg);}
+.direita {display: flex;align-items: center;justify-content: center;}
+.marca {right: 2em;width: 200px;position: absolute;margin-top: -2em;}
+.imagem {width: 100%;height: 100%;position: relative;}
+.imagem img{width: 350px;left: 30%;top: 15%;position: absolute;}
+.passo {width: 50%;height: 100%;}
+.logo {width: 300px;height: 250px;position: absolute; background: url(../imgs/Caminho206.png) no-repeat;background-size: 100%;display: flex;align-items: center;justify-content: center;}
+.logo img {width: 200px;height: 200px;object-fit: contain;margin-left: -3em;margin-top: -7em;}
+.formulario {display: flex;flex-wrap: wrap;align-items: center;justify-content: space-between;width: 45%;margin: 2em auto 0 auto;}
+.tituloPlano {color: #085499;font-family: principalRoboto;font-size: 4.2em;text-transform: uppercase;width: 100%;text-align: center;line-height: 50px;}
+.tituloPlano span {font-size: 2.5rem;border-bottom: 5px solid #1486d4;}
+.subtituloPlano {font-size: 8rem;text-align: center;line-height: 60px;margin: 30px 0 0 0;color: #41b8ff;font-family: principalRoboto;width: 100%;text-transform: uppercase}
+.subtituloPlano span {font-size: 4rem;}
+.precoPlano {font-size: 1.2rem;margin: 0;color: #085499;font-family: precos;font-weight: bolder;width: 100%;text-align: center;}
+.textoPlano {text-align: center;font-family: precos;margin-top: 1em;color: gray;font-size: 13px;margin-bottom: 0;}
+.tituloCompra {text-align: center;font-size: 2.5rem;font-family: principalRoboto;text-transform: uppercase;color: #085499;}
+.subtituloCompra {text-align: center;font-size: 1.7rem;font-family: secundarioRoboto;text-transform: uppercase;color: gray;}
+.caixaGrande {width: 100%;}
+.caixaPequena {width: 48%;}
+.caixa {padding: 0.5rem;border: 1px solid gray;border-radius: 10px;margin: 0.3em 0;}
+.botoes {display: flex;width: 100%;justify-content: space-evenly;align-items: center;margin-top: 2em;}
+.botoes button {width: 45%;border-radius: 25px;background-image: linear-gradient(to left,#00c7df, #0c74be);border: none;padding: 0.5em;color: white;font-size: 1.0rem;font-family: precos;cursor: pointer;}
+.cartao {display: flex;justify-content: center;align-items: center;width: 100%;}
+.cartao input {width: 70%;border-right: none;border-radius: 10px 0px 0px 10px;}
+.cartao span {width: 30%;border-left: none;border-radius: 0px 10px 10px 0px;height: 42px;text-align: center;}
+.formulario p {width: 100%;}
+#confirmarDados p{font-size: 14px;margin: 0;color: #888888;}
+.comprar select, input::placeholder {font-size: 12px;color: #888888;}
+
+@media screen and (max-width: 800px) {
+  .bolhas {display: none;}
+  footer {height: 100%;}
+  footer .adm {margin: 3em 0;}
+  .whats {height: 100%;flex-direction: column;padding: 2em 0;}
+  #novo {display: none;}
+  .whats .contato {width: 100%;}
+  .bonecoVantagens {display: none;}
+  .carousel {width: 100%;}
+  .planos img {display: none;}
+  .planos {height: 100%;}
+  .planos .precos {width: 90%;}
+  .imagemPrincipal img {width: 200px;}
+  .textoPrincipal h1 {font-size: x-large;}
+  .textoPrincipal p {max-width: 100%;}
+  .textoPrincipal button {padding: 1em 2em;margin: 1em 0;}
+  .textoPrincipal .texto {margin-top: 5em;}
+  .logoPrincipal {width: 24%;}
+  .logoPrincipal img {max-width: 140px;margin-left: -2em;}
+}
+
+@media screen and (max-width:500px) {
+
+  .titulo {text-align: center;}
+
+  header {height: 700px;}
+  .imagemPrincipal {display: none;}
+  .logoPrincipal {width: 180px;background: none;}  
+  .logoPrincipal img {max-width: 100%;margin-left: 0;}
+  .entrar {top: 5%;margin-right: 0%;padding: 1em;}
+  .textoPrincipal {height: auto;width: 80%;text-align: right;margin: -50px auto 0 auto;}
+  .textoPrincipal .texto {max-width: 100%;}
+  .textoPrincipal h1 {font-size: 2em;}
+  .textoPrincipal p {margin: 0 auto;max-width: 100%;}
+  .textoPrincipal button {padding: 0.5em 1em;margin: 0.5em 0;}
+  .back {width: 100%;object-fit: cover;height: 700px;margin: 0;}
+
+  .planos {flex-direction: column;height: auto;}
+  .planos img {display: none;}
+  .precos {width: 100%;}
+  .planos .bloco {flex-direction: column;justify-content: center;}
+  .planos .bloco .box {width: 90%;margin: 1em 0;}
+  .planos .precos p {margin: 0 auto;}
+  #txtPlano {max-width: 90%!important;}
+  
+
+  .vantagens {margin: 0;height: 100vh;background-size: auto;}
+  .backgroundOnda {display: none;}
+  .bonecoVantagens {display: none;}
+  .carousel {width: 100%;}
+
+  .whats {flex-direction: column;height: 100%;}
+  .whats .contato {width: 100%;}
+  .whats .contato h1 {font-size: 2em!important;}
+  .whats .contato h1:nth-child(3) {font-size: 3.5rem!important;}
+  .whats .contato img {max-width: 80%;}
+  #novo {display: none;}
+  .formularioPrincipal form {flex-direction: column;}
+  .caixaPequena {width: 90%;}
+  .mensagem {width: 90%!important;}
+  .formularioPrincipal button {width: 90%;}
+
+
+  .bolhas {display: none;}
+  footer .info img {max-width: 70%;}
+  footer .info p {max-width: 100%!important;}
+  .adm {margin-top: 2em!important;text-align: center;}
+  .adm p span {width: 100%;}
+
+  .comprar {flex-direction: column;}
+  .passo {width: 100%;}
+  .logo {width: 100%;position: relative;height: 200px;background-size: contain;}
+  .logo img {width: 180px;height: 180px;margin: 0!important;position: absolute;top: 0;left: 15%;}
+  .formulario {width: 90%;margin: 0 auto!important;height: 100%;}
+  .boneco {width: 100%;height: 350px;background-size: 100%;background-position: center;}
+  .imagem img {display: none;}
+  .caixa {width: 100%!important;}
+  .marca {margin: 0 auto!important;top: 10%;right: 0;left: 15%;}
+  .sumir {display: none!important;}
+  .cartao span {width: auto!important;}
+}

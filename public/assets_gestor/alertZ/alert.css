@@ -1,0 +1,24 @@
+@font-face { src: url('fonts/Lato-Light.ttf'); font-family: 'mensagem'; }
+
+.alert { position: fixed; z-index:99999999999999999999; width: 100%; transition: all ease-out .5s;}
+
+.alert.bottom{ bottom: 5%;}
+.alert.top{ top: 5%;}
+.alert .boxMsg {    width: 100%; border-radius: 2px; padding: .7rem; max-width: 750px;  display: table;display: -webkit-flex; -webkit-align-items: center; -webkit-justify-content:space-between; display: flex; align-items: center; justify-content:space-between;margin: 0 auto; text-align: center; box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.48); border:.3px solid rgba(177, 177, 177, 0.25); background: rgb(241, 241, 241);  position: relative;}
+.alert.deleting{opacity: 0; pointer-events: none;}
+
+.alert .msg{width: calc(100% - 30px - .5rem); font-size: 1.4rem; float: left; margin-right: .5rem; color: #383838; font-family: mensagem, sans-serif; }
+.alert .close{     display: block; width: 30px; height: 30px; background: url(close.png)no-repeat center; background-size: 50% 50%; cursor: default; float: right; }
+
+/*sucesso*/
+.alert.sucesso .msg{    color: #4A7749;}
+.alert.sucesso .boxMsg{border-color: #d6e9c6; background-color: #7AD634; }
+/*error*/
+.alert.erro .msg{color: #a94442;}
+.alert.erro .boxMsg{ background-color: #f2dede; border-color: #ebccd1;}
+/*alerta*/
+.alert.alerta .msg{     color: #8a6d3b;}
+.alert.alerta .boxMsg{ background-color: #fcf8e3; border-color: #faebcc;}
+/*info*/
+.alert.informacao .msg{     color: #31708f;}
+.alert.informacao .boxMsg{ background-color: #d9edf7; border-color: #bce8f1;}

@@ -1,0 +1,59 @@
+/* Tipografia */
+.title {font-family: texto-bold;}
+.green {color:#2af275;}
+.white {color:#fff;}
+.blue {color:#01032a;}
+
+/* FORMULÀRIOS */
+
+
+/* LOGIN */
+.bg-sky{background-color: #01032a; height: 100vh; 
+  background-image: url("../img/pattern.png");
+  -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 50%);
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 50%);
+}
+
+input[type="checkbox"].fix {position: relative;top: 3px;margin-left: -.7rem;}
+.reset_pass {position: relative;top: 5px;}
+.form-login-container {display: flex;justify-content: center; flex-wrap: wrap;}
+.logo-login {max-width: 150px;}
+.form-login{ min-width: 500px;}
+.form-control.no-border {border: none;}
+.presentation-login {position: relative;top: -15px;}
+.half-screen{width: 50%;}
+/* Layout */
+.v-middle {width: 100%; min-width:240px;height: 100vh;display: -ms-flexbox!important;display: -webkit-flex!important;display: flex!important;-ms-flex-align: center!important;-webkit-align-items: center!important;-webkit-box-align: center!important;align-items: center!important;justify-content: center;}
+.end {justify-content: flex-end;}
+.center{justify-content: center;}
+
+@media only screen and (max-width:1024px){
+  .half-screen{width: 100%;}
+  .form-login {padding:0px;min-width: inherit; margin-top: 3rem;}
+  .form-login-container {flex-direction: column-reverse;}
+  .v-middle{height: inherit;padding: 0px;}
+  .presentation-login{margin: 0; position: relative;top: 0;padding: 20px;}
+  .presentation-login .title {font-size: x-large;}
+  .presentation-login .info {font-size: small;}
+  .v-middle {justify-content: center;}
+  .logo-login {max-width: 100px;margin: 0 auto;}
+  .bg-sky {
+    background-color: #01032a;
+    /* height: 100vh; */
+    background-image: url(../img/pattern.png);
+    -webkit-clip-path: none;
+      clip-path: none;
+  }
+}
+@media only screen and (max-width:740px){
+  .form-login {
+    padding-right: 0px;
+    min-width: 300px;
+width: 200px;
+    }
+    .bg-sky{background-color: #01032a; 
+      background-image: url("../img/pattern.png");
+      -webkit-clip-path: none;
+      clip-path: none;
+    }
+}
